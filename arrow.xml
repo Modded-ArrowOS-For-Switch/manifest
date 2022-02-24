@@ -159,6 +159,7 @@
   <project path="external/gptfdisk" name="android_external_gptfdisk" remote="arrow" />
   <project path="external/json-c" name="android_external_json-c" remote="arrow" />
   <project path="external/libaom" name="android_external_libaom" remote="arrow" />
+  <project path="external/libcxx" name="android_external_libcxx" remote="modded" />
   <project path="external/libexif" name="android_external_libexif" remote="arrow" />
   <project path="external/ntfs-3g" name="android_external_ntfs-3g" remote="arrow" />
   <project path="external/okhttp" name="android_external_okhttp" remote="arrow" />
