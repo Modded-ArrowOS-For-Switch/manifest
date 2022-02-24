@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
+  <remote name="modded" fetch="https://github.com/Modded-ArrowOS-For-Switch/" revision="lineage-17.1" />
+  <remote name="arrowmod" fetch="https://github.com/Modded-ArrowOS-For-Switch/" revision="arrow-10.0" />
+
   <project path="manifest" name="android_manifest" remote="arrow" />
   <project path="build/make" name="android_build" remote="arrow" >
     <copyfile src="core/root.mk" dest="Makefile" />
@@ -27,9 +30,7 @@
   <project path="device/qcom/sepolicy-legacy" name="android_device_qcom_sepolicy-legacy" remote="arrow" />
   <project path="device/qcom/sepolicy-legacy-um" name="android_device_qcom_sepolicy-legacy-um" remote="arrow" />
   <project path="frameworks/av" name="android_frameworks_av" remote="arrow" />
-  <project path="frameworks/base" name="android_frameworks_base" remote="arrow" />
   <project path="frameworks/minikin" name="android_frameworks_minikin" remote="arrow" />
-  <project path="frameworks/native" name="android_frameworks_native" remote="arrow" />
   <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="arrow" />
   <project path="frameworks/opt/net/wifi" name="android_frameworks_opt_net_wifi" remote="arrow" />
   <project path="system/bt" name="android_system_bt" remote="arrow" />
@@ -47,7 +48,6 @@
   <project path="system/tools/dtbtool" name="android_system_tools_dtbtool" remote="arrow" />
   <project path="system/vold" name="android_system_vold" groups="pdk" remote="arrow" />
   <project path="system/update_engine" name="android_system_update_engine" groups="pdk" remote="arrow" />
-  <project path="vendor/arrow" name="android_vendor_arrow" remote="arrow" />
   <project path="libcore" name="android_libcore" remote="arrow" />
 
   <!-- Arrow Packages Repos -->
@@ -115,7 +115,6 @@
   <project path="hardware/qcom/media-caf/msm8994" name="android_hardware_qcom_media" groups="qcom" remote="arrow" revision="arrow-10.0-caf-8994" />
   <project path="hardware/qcom/media-caf/msm8996" name="android_hardware_qcom_media" groups="qcom" remote="arrow" revision="arrow-10.0-caf-8996" />
   <project path="hardware/qcom/media-caf/msm8998" name="android_hardware_qcom_media" groups="qcom" remote="arrow" revision="arrow-10.0-caf-8998" />
-  <project path="hardware/interfaces" name="android_hardware_interfaces" remote="arrow" />
   <project path="hardware/arrow/interfaces" name="android_hardware_arrow_interfaces" remote="arrow" />
 <!--  <project path="hardware/arrow/telephony" name="android_hardware_arrow_telephony" remote="arrow" />-->
   <project path="hardware/libhardware" name="android_hardware_libhardware" remote="arrow" />
@@ -218,4 +217,59 @@
 
   <!-- Arrow Infrastructure Repos -->
   <project path="infrastructure/devices" name="arrow_infrastructure_devices" remote="arrow" />
+
+	<!-- Device repos -->
+	<project name="android_device_nintendo_icosa_sr" path="device/nintendo/icosa_sr" remote="modded" />
+	<project name="android_device_nvidia_shield-common" path="device/nvidia/shield-common" remote="modded" />
+	<project name="android_device_nvidia_touch" path="device/nvidia/touch" remote="modded" />
+	<project name="android_device_nvidia_sepolicy" path="device/nvidia/sepolicy" remote="modded" />
+	<project name="android_device_nvidia_tegra-common" path="device/nvidia/tegra-common" remote="modded" />
+	<project name="android_device_nvidia_t210-common" path="device/nvidia/t210-common" remote="modded" />
+
+	<!-- Kernel repos -->
+	<project name="android_kernel_nvidia_linux-4.9_kernel_nvgpu" path="kernel/nvidia/linux-4.9_icosa/kernel/nvgpu" remote="modded" />
+	<project name="android_kernel_nvidia_linux-4.9_hardware_nvidia_platform_tegra_common" path="kernel/nvidia/linux-4.9_icosa/hardware/nvidia/platform/tegra/common" remote="modded" />
+	<project name="android_kernel_nvidia_linux-4.9_hardware_nvidia_soc_tegra" path="kernel/nvidia/linux-4.9_icosa/hardware/nvidia/soc/tegra" remote="modded" />
+	<project name="android_kernel_nvidia_linux-4.9_hardware_nvidia_platform_t210_abca" path="kernel/nvidia/linux-4.9/hardware/nvidia/platform/t210/abca" remote="modded" />
+	<project name="android_kernel_nvidia_linux-4.9_hardware_nvidia_platform_t210_common" path="kernel/nvidia/linux-4.9_icosa/hardware/nvidia/platform/t210/common" remote="modded" />
+	<project name="android_kernel_nvidia_linux-4.9_hardware_nvidia_platform_t210_ers" path="kernel/nvidia/linux-4.9/hardware/nvidia/platform/t210/ers" remote="modded" />
+	<project name="android_kernel_nvidia_linux-4.9_hardware_nvidia_platform_t210_foster" path="kernel/nvidia/linux-4.9/hardware/nvidia/platform/t210/foster" remote="modded" />
+	<project name="android_kernel_nvidia_linux-4.9_hardware_nvidia_platform_t210_fpga" path="kernel/nvidia/linux-4.9/hardware/nvidia/platform/t210/fpga" remote="modded" />
+	<project name="android_kernel_nvidia_linux-4.9_hardware_nvidia_platform_t210_hawkeye" path="kernel/nvidia/linux-4.9/hardware/nvidia/platform/t210/hawkeye" remote="modded" />
+	<project name="android_kernel_nvidia_linux-4.9_hardware_nvidia_platform_t210_jetson" path="kernel/nvidia/linux-4.9/hardware/nvidia/platform/t210/jetson" remote="modded" />
+	<project name="android_kernel_nvidia_linux-4.9_hardware_nvidia_platform_t210_orca" path="kernel/nvidia/linux-4.9/hardware/nvidia/platform/t210/orca" remote="modded" />
+	<project name="android_kernel_nvidia_linux-4.9_hardware_nvidia_platform_t210_porg" path="kernel/nvidia/linux-4.9/hardware/nvidia/platform/t210/porg" remote="modded" />
+	<project name="android_kernel_nvidia_linux-4.9_hardware_nvidia_soc_t210" path="kernel/nvidia/linux-4.9_icosa/hardware/nvidia/soc/t210" remote="modded" />
+
+	<project name="android_kernel_nvidia_linux-4.9_icosa_kernel_kernel-4.9" path="kernel/nvidia/linux-4.9_icosa/kernel/kernel-4.9" remote="modded"/>
+	<project name="android_kernel_nvidia_linux-4.9_icosa_kernel_nvidia" path="kernel/nvidia/linux-4.9_icosa/kernel/nvidia" remote="modded"/>
+	<project name="android_kernel_nvidia_linux-4.9_icosa_hardware_nvidia_platform_t210_icosa" path="kernel/nvidia/linux-4.9_icosa/hardware/nvidia/platform/t210/icosa" remote="modded"/>
+	<project name="android_kernel_nvidia_cypress-fmac-upstream" path="kernel/nvidia/cypress-fmac-upstream" remote="modded" />
+
+
+	<!-- Prebuilt repos -->
+	<project name="android_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-gnu-6.4.1" path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-gnu-6.4.1" remote="modded" />
+
+	<!-- Driver repos -->
+	<project name="android_hardware_nintendo_joycond" path="hardware/nintendo/joycond" remote="modded" />
+	<project name="android_external_libevdev" path="external/libevdev" remote="modded" />
+	<project name="android_hardware_STMicroElectronics_SensorHAL_IIO" path="hardware/STMicroElectronics/SensorHAL_IIO" remote="modded" />
+
+	<!-- Nvidia hardware repos -->
+	<project name="android_hardware_nvidia_interfaces" path="hardware/nvidia/interfaces" remote="modded" />
+	<project name="android_hardware_nvidia_light" path="hardware/nvidia/light" remote="modded" />
+	<project name="android_hardware_nvidia_thermal" path="hardware/nvidia/thermal" remote="modded" />
+	<project name="android_hardware_nvidia_power" path="hardware/nvidia/power" remote="modded" />
+	<project name="android_hardware_nvidia_input_hook" path="hardware/nvidia/input_hook" remote="modded" />
+
+	<!-- Vendor repos -->
+	<project name="proprietary_vendor_nvidia" path="vendor/nvidia" remote="modded" />
+
+	<!-- Modded Arrow -->
+	<project name="android_hardware_interfaces" path="hardware/interfaces" remote="arrowmod" />
+	<project name="android_frameworks_base" path="frameworks/base" remote="arrowmod" />
+	<project name="android_frameworks_native" path="frameworks/native" remote="arrowmod" />
+	<project name="android_vendor_arrow" path="vendor/arrow" remote="arrowmod" />
+		
+
 </manifest>

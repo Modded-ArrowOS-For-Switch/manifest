@@ -6,6 +6,7 @@
            review="https://android-review.googlesource.com/" />
 
   <remote  name="github"
+           revision="refs/heads/lineage-17.1"
            fetch="https://github.com/" />
 
   <remote  name="arrow"
