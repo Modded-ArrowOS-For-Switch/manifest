@@ -220,7 +220,7 @@
   <project path="infrastructure/devices" name="arrow_infrastructure_devices" remote="arrow" />
 
 	<!-- Device repos -->
-	<!-- project name="android_device_nintendo_icosa_sr" path="device/nintendo/icosa_sr" remote="modded" / -->
+	<project name="android_device_nintendo_icosa_sr" path="device/nintendo/icosa_sr" remote="modded" />
 	<project name="android_device_nvidia_shield-common" path="device/nvidia/shield-common" remote="modded" />
 	<project name="android_device_nvidia_touch" path="device/nvidia/touch" remote="modded" />
 	<project name="android_device_nvidia_sepolicy" path="device/nvidia/sepolicy" remote="modded" />
