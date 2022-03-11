@@ -6,7 +6,7 @@
   <remote name="arrowmod" fetch="https://github.com/Modded-ArrowOS-For-Switch/" revision="arrow-11.0" />
 
   <project path="manifest" name="android_manifest" remote="arrow" />
-  <project path="build/make" name="android_build" remote="arrow" >
+  <project path="build/make" name="android_build" remote="arrowmod" >
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
