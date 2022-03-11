@@ -16,7 +16,7 @@
     <linkfile src="tools" dest="build/tools" />
   </project>
   <project path="build/blueprint" name="android_build_blueprint" groups="pdk,tradefed" remote="arrow" />
-  <project path="build/soong" name="android_build_soong" groups="pdk,tradefed" remote="arrow" >
+  <project path="build/soong" name="android_build_soong" groups="pdk,tradefed" remote="arrowmod" >
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
