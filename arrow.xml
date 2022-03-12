@@ -263,24 +263,24 @@
 	<project name="android_device_nvidia_t210-common" path="device/nvidia/t210-common" remote="moddedr" />
 
 	<!-- Kernel repos -->
-	<project name="android_kernel_nvidia_linux-4.9_kernel_nvgpu" path="kernel/nvidia/linux-4.9_icosa/kernel/nvgpu" remote="modded" />
-	<project name="android_kernel_nvidia_linux-4.9_hardware_nvidia_platform_tegra_common" path="kernel/nvidia/linux-4.9_icosa/hardware/nvidia/platform/tegra/common" remote="modded" />
-	<project name="android_kernel_nvidia_linux-4.9_hardware_nvidia_soc_tegra" path="kernel/nvidia/linux-4.9_icosa/hardware/nvidia/soc/tegra" remote="modded" />
-	<project name="android_kernel_nvidia_linux-4.9_hardware_nvidia_platform_t210_abca" path="kernel/nvidia/linux-4.9/hardware/nvidia/platform/t210/abca" remote="modded" />
-	<project name="android_kernel_nvidia_linux-4.9_hardware_nvidia_platform_t210_common" path="kernel/nvidia/linux-4.9_icosa/hardware/nvidia/platform/t210/common" remote="modded" />
-	<project name="android_kernel_nvidia_linux-4.9_hardware_nvidia_platform_t210_ers" path="kernel/nvidia/linux-4.9/hardware/nvidia/platform/t210/ers" remote="modded" />
-	<project name="android_kernel_nvidia_linux-4.9_hardware_nvidia_platform_t210_foster" path="kernel/nvidia/linux-4.9/hardware/nvidia/platform/t210/foster" remote="modded" />
-	<project name="android_kernel_nvidia_linux-4.9_hardware_nvidia_platform_t210_fpga" path="kernel/nvidia/linux-4.9/hardware/nvidia/platform/t210/fpga" remote="modded" />
-	<project name="android_kernel_nvidia_linux-4.9_hardware_nvidia_platform_t210_hawkeye" path="kernel/nvidia/linux-4.9/hardware/nvidia/platform/t210/hawkeye" remote="modded" />
-	<project name="android_kernel_nvidia_linux-4.9_hardware_nvidia_platform_t210_jetson" path="kernel/nvidia/linux-4.9/hardware/nvidia/platform/t210/jetson" remote="modded" />
-	<project name="android_kernel_nvidia_linux-4.9_hardware_nvidia_platform_t210_orca" path="kernel/nvidia/linux-4.9/hardware/nvidia/platform/t210/orca" remote="modded" />
-	<project name="android_kernel_nvidia_linux-4.9_hardware_nvidia_platform_t210_porg" path="kernel/nvidia/linux-4.9/hardware/nvidia/platform/t210/porg" remote="modded" />
-	<project name="android_kernel_nvidia_linux-4.9_hardware_nvidia_soc_t210" path="kernel/nvidia/linux-4.9_icosa/hardware/nvidia/soc/t210" remote="modded" />
+	<project name="android_kernel_nvidia_linux-4.9_kernel_nvgpu" path="kernel/nvidia/nvgpu" remote="moddedr" />
+	<project name="android_kernel_nvidia_linux-4.9_hardware_nvidia_platform_tegra_common" path="hardware/nvidia/platform/tegra/common" remote="moddedr" />
+	<project name="android_kernel_nvidia_linux-4.9_hardware_nvidia_soc_tegra" path="hardware/nvidia/soc/tegra" remote="moddedr" />
+	<project name="android_kernel_nvidia_linux-4.9_hardware_nvidia_platform_t210_abca" path="hardware/nvidia/platform/t210/abca" remote="modded" />
+	<project name="android_kernel_nvidia_linux-4.9_hardware_nvidia_platform_t210_common" path="hardware/nvidia/platform/t210/common" remote="moddedr" />
+	<project name="android_kernel_nvidia_linux-4.9_hardware_nvidia_platform_t210_ers" path="hardware/nvidia/platform/t210/ers" remote="modded" />
+	<project name="android_kernel_nvidia_linux-4.9_hardware_nvidia_platform_t210_foster" path="hardware/nvidia/platform/t210/foster" remote="modded" />
+	<project name="android_kernel_nvidia_linux-4.9_hardware_nvidia_platform_t210_fpga" path="hardware/nvidia/platform/t210/fpga" remote="modded" />
+	<project name="android_kernel_nvidia_linux-4.9_hardware_nvidia_platform_t210_hawkeye" path="hardware/nvidia/platform/t210/hawkeye" remote="modded" />
+	<project name="android_kernel_nvidia_linux-4.9_hardware_nvidia_platform_t210_jetson" path="hardware/nvidia/platform/t210/jetson" remote="modded" />
+	<project name="android_kernel_nvidia_linux-4.9_hardware_nvidia_platform_t210_orca" path="hardware/nvidia/platform/t210/orca" remote="modded" />
+	<project name="android_kernel_nvidia_linux-4.9_hardware_nvidia_platform_t210_porg" path="hardware/nvidia/platform/t210/porg" remote="modded" />
+	<project name="android_kernel_nvidia_linux-4.9_hardware_nvidia_soc_t210" path="hardware/nvidia/soc/t210" remote="moddedr" />
 
-	<project name="android_kernel_nvidia_linux-4.9_icosa_kernel_kernel-4.9" path="kernel/nvidia/linux-4.9_icosa/kernel/kernel-4.9" remote="modded"/>
-	<project name="android_kernel_nvidia_linux-4.9_icosa_kernel_nvidia" path="kernel/nvidia/linux-4.9_icosa/kernel/nvidia" remote="modded"/>
-	<project name="android_kernel_nvidia_linux-4.9_icosa_hardware_nvidia_platform_t210_icosa" path="kernel/nvidia/linux-4.9_icosa/hardware/nvidia/platform/t210/icosa" remote="modded"/>
-	<project name="android_kernel_nvidia_cypress-fmac-upstream" path="kernel/nvidia/cypress-fmac-upstream" remote="modded" />
+	<project name="android_kernel_nvidia_linux-4.9_icosa_kernel_kernel-4.9" path="kernel/nvidia/kernel-4.9-icosa" remote="moddedr"/>
+	<project name="android_kernel_nvidia_linux-4.9_icosa_kernel_nvidia" path="kernel/nvidia/nvidia" remote="moddedr"/>
+	<project name="android_kernel_nvidia_linux-4.9_icosa_hardware_nvidia_platform_t210_icosa" path="hardware/nvidia/platform/t210/icosa" remote="moddedr"/>
+	<project name="android_kernel_nvidia_cypress-fmac-upstream" path="kernel/nvidia/cypress-fmac-upstream" remote="moddedr" />
 
 
 	<!-- Prebuilt repos -->
