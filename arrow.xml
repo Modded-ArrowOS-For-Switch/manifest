@@ -299,7 +299,7 @@
 	<!-- <project name="android_hardware_nvidia_input_hook" path="hardware/nvidia/input_hook" remote="modded" /> -->
 
 	<!-- Vendor repos -->
-	<project name="proprietary_vendor_nvidia" path="vendor/nvidia" remote="modded" />
+	<project name="proprietary_vendor_nvidia" path="vendor/nvidia" remote="moddedr" />
 
 	<!-- Modded Arrow -->
 	<project name="android_hardware_interfaces" path="hardware/interfaces" remote="arrowmod" />
