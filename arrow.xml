@@ -296,7 +296,7 @@
 	<project name="android_hardware_nvidia_light" path="hardware/nvidia/light" remote="moddedr" />
 	<project name="android_hardware_nvidia_thermal" path="hardware/nvidia/thermal" remote="moddedr" />
 	<project name="android_hardware_nvidia_power" path="hardware/nvidia/power" remote="moddedr" />
-	<project name="android_hardware_nvidia_input_hook" path="hardware/nvidia/input_hook" remote="modded" />
+	<!-- <project name="android_hardware_nvidia_input_hook" path="hardware/nvidia/input_hook" remote="modded" /> -->
 
 	<!-- Vendor repos -->
 	<project name="proprietary_vendor_nvidia" path="vendor/nvidia" remote="modded" />
